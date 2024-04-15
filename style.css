@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 }
 a {
-	color:#5f0099;
+	color:#2388ed;
 }
 a:hover {
 	color:#5f0099;
@@ -40,7 +40,7 @@ h6 {
 	z-index: 1030;
 }
 .navbar .active {
-	color: #5f0099 !important;
+	color: #242424 !important;
 }
 .navbar .navbar-brand {
 }
@@ -55,7 +55,7 @@ h6 {
 	font-size: 13px;
 }
 .navbar .nav-item a:hover {
-	color: #5f0099;
+	color: #cd9ffa;
 }
 .navbar .nav-link {
 	position: relative;
@@ -65,7 +65,7 @@ h6 {
 	cursor: pointer;
 }
 .navbar .navbar-toggler span {
-	color: #fff;
+	color: #5f0099;
 }
 .navbar-style2 .active:after, .navbar-style2 .nav-link:after {
 	display: none;

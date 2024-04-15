@@ -411,7 +411,7 @@
 <script src="js/scrollIt.min.js" defer></script>
 <script src="js/wow.min.js" defer></script>
 <script>
-  wow = new WOW();
+  var wow = new WOW();
   wow.init();
 
   $(document).ready(function() {
@@ -422,20 +422,22 @@
     });
 
     $('.video-popup').on('click', function(e) {
-      var $target = e.target.nodeName.toLowerCase();  // 將nodeName轉為小寫
+      var $target = e.target.nodeName.toLowerCase();
       var video_src = $(this).find('iframe').attr('src');
 
       if ($target !== 'iframe') {
         $('.video-popup').fadeOut();
         $('.iframe-src').slideUp();
-        $('.video-popup iframe').attr('src', '').attr('src', video_src);  // 設置iframe的src為空然後再設置回原始值
+        $('.video-popup iframe').attr('src', '').attr('src', video_src);
       }
     });
+
 
     $('.slider').bxSlider({
       pager: false
     });
   });
+
 
   $(window).on("scroll", function() {
     var bodyScroll = $(window).scrollTop(),
